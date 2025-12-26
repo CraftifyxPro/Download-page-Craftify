@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        body {
+            background-color: #f4f7f9;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+        }
+        .main-container {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;   
+            text-align: center;
+        }
+        .instruction-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 25px; 
+        }
+        /* Download button styling */
+        .download-button {
+            width: 320px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+            /* User selection disable taki click smooth rahe */
+            -webkit-user-select: none;
+            user-select: none;
+        }
+        .download-button:hover {
+            transform: scale(1.05);
+        }
+        .download-button:active {
+            transform: scale(0.95);
+        }
+        
+        .stats-container {
+            display: flex;
+            gap: 25px;
+            background-color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-top: 25px; 
+        }
+        .stat-item {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+        }
+        .stat-item span {
+            margin-left: 8px;
+            color: #555;
+        }
+        .stars {
+            color: #ffc107;
+        }
+        
+        .ad-placement {
+            margin-top: 60px; 
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
+    <!-- JAVASCRIPT FOR DOWNLOAD (FIX) -->
+    <script>
+        function startDownload() {
+            // Aapka file link
+            var fileLink = "https://www.mediafire.com/file/1x9qk1kkofyasvl/The+INFINITE+City+V22.mcworld/file";
+            
+            // Ye line browser ko force karegi ki wo is link par jaye.
+            // Kyunki ye file link (.mcpack) hai, browser ise turant download kar lega
+            // bhale hi Ad background me khule ya na khule.
+            window.location.href = fileLink;
+        }
+    </script>
+</head>
+<body>
+    <div class="main-container">
+
+        <!-- 1. SOCIAL BAR AD SCRIPT -->
+        <script type='text/javascript' src='//pl28098103.effectivegatecpm.com/9a/a9/c2/9aa9c2c4aa487095715200df15384093.js'></script>
+
+        <!-- 2. TEXT -->
+        <p class="instruction-text">
+            Click Download button and download Addon
+        </p>
+
+        <!-- 3. DOWNLOAD BUTTON (JAVASCRIPT TRIGGER) -->
+        <!-- Maine <a> tag hata diya hai aur onclick lagaya hai -->
+        <img class="download-button" 
+             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFgMH_FLbuxquVWqaDphXgvN5ZGupqljR2aOiQ_j7swsOBldoSB_K7iWTv1BLQ81JjcbsewmGx-eBYfN8qAspqBobiPzneLxoAEvscIqHA0CS1xJZ-cjwIaaIYx8gj-bfitjwhdFSQpC6hwP5v3UywmSjgXwj-mdr7i6skBHCWZE2lQm3KB2wcidYyqdM/s1757/Craftify-Download-button.webp" 
+             alt="Download Now" 
+             onclick="startDownload()"
+             oncontextmenu="return false;" 
+             ondragstart="return false;">
+
+        <!-- 4. STAR RATING OPTION -->
+        <div class="stats-container">
+            <div class="stat-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+                <span>15,000+</span>
+            </div>
+            <div class="stat-item">
+                <div class="stars">★★★★☆</div>
+                <span>(4.8)</span>
+            </div>
+        </div>
+
+        <!-- 5. Native Ad-->
+        <div class="ad-placement">
+            <script async="async" data-cfasync="false" src="//pl28082078.effectivegatecpm.com/06e14cd3aeb5b39026187a8ecf9ab8c2/invoke.js"></script>
+            
+            <!-- 6.Popunder ad -->
+
+           <script type='text/javascript' src='//summonteacherjunction.com/22/78/87/2278874127e7aafd1f70543accd8c6c1.js'></script>
+
+            <div id="container-06e14cd3aeb5b39026187a8ecf9ab8c2"></div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
